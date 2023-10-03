@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+    <div class="rial, text-center">
+        <h1>The Rial News</h1>
+        <h5>Tu Portal de Noticias</h5>
+    </div>
+    <hr>
+    <div id="notices">
+        <% @notices.each do |notice| %>
+            <%= render notice %>
+            <p>
+            <%= link_to "Show this notice", notice %>
+            </p>
+        <% end %>
+    </div>
+</div>
+    </div>
+</div>
